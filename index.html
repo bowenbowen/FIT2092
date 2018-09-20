@@ -1,0 +1,835 @@
+<!--blue: #3fa9f5-->
+<!--https://www.videezy.com/technology/6856-close-up-filling-vials  blood sample video-->
+<!--https://www.videezy.com/health-and-beauty/14919-dna-test DNA test-->
+<!--https://www.videezy.com/people/6893-female-scientist-on-microscope microscope-->
+<!--https://www.videezy.com/technology/6864-filling-multiple-vials-in-the-lab-->
+<!--https://freesound.org/people/anankalisto/sounds/139050/ bg music-->
+
+
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+</head>
+
+<body>
+    <!----------------------- FIXED ELEMENST ------------------------->
+
+    <section id="fixed-elements">
+        <audio id="bgmusic" autoplay loop src="audios/139050__anankalisto__resonance-of-the-gods.mp3">
+        </audio>
+
+        <svg id="moaf-logo" viewBox="0 0 250 82.35">
+            <g id="museum-of" class="logo-text">
+                <path class="corner-icon-shape-style" d="M104.48,15.78c-.11-2.09-.24-4.6-.22-6.47h-.06c-.52,1.76-1.14,3.62-1.89,5.69l-2.65,7.26H98.2l-2.42-7.13c-.71-2.11-1.31-4-1.74-5.82h0c0,1.87-.16,4.38-.29,6.62l-.4,6.42H91.47l1-15H95l2.55,7.24c.62,1.84,1.13,3.49,1.51,5h.07c.38-1.51.91-3.15,1.58-5l2.66-7.24h2.47l.93,15h-1.89Z" />
+                <path class="corner-icon-shape-style" d="M118.72,19.42c0,1.11,0,2.09.09,2.93h-1.73L117,20.6h0a4.08,4.08,0,0,1-3.56,2c-1.69,0-3.71-.94-3.71-4.71V11.6h2v6c0,2.05.62,3.42,2.4,3.42a2.81,2.81,0,0,0,2.57-1.77,2.91,2.91,0,0,0,.18-1V11.6h2Z" />
+                <path class="corner-icon-shape-style" d="M121.7,20.35a5.11,5.11,0,0,0,2.58.78c1.42,0,2.09-.71,2.09-1.6s-.56-1.44-2-2c-1.93-.69-2.84-1.75-2.84-3,0-1.73,1.39-3.15,3.7-3.15a5.45,5.45,0,0,1,2.65.66l-.49,1.42a4.24,4.24,0,0,0-2.2-.62c-1.15,0-1.8.67-1.8,1.47s.65,1.29,2,1.82c1.87.71,2.83,1.64,2.83,3.24,0,1.89-1.47,3.22-4,3.22a6.11,6.11,0,0,1-3-.73Z" />
+                <path class="corner-icon-shape-style" d="M131.86,17.33a3.44,3.44,0,0,0,3.68,3.73,7.1,7.1,0,0,0,3-.55l.33,1.4a8.72,8.72,0,0,1-3.57.66c-3.31,0-5.29-2.17-5.29-5.42s1.91-5.79,5-5.79c3.51,0,4.44,3.08,4.44,5.06a8.16,8.16,0,0,1-.06.91Zm5.73-1.4c0-1.24-.51-3.17-2.71-3.17-2,0-2.85,1.82-3,3.17Z" />
+                <path class="corner-icon-shape-style" d="M150.89,19.42c0,1.11,0,2.09.09,2.93h-1.73l-.11-1.75h0a4.05,4.05,0,0,1-3.55,2c-1.69,0-3.71-.94-3.71-4.71V11.6h2v6c0,2.05.62,3.42,2.39,3.42a2.82,2.82,0,0,0,2.58-1.77,2.91,2.91,0,0,0,.18-1V11.6h1.95Z" />
+                <path class="corner-icon-shape-style" d="M154.14,14.51c0-1.11,0-2-.09-2.91h1.71l.09,1.73h.07a3.69,3.69,0,0,1,3.37-2,3.18,3.18,0,0,1,3.05,2.15h0a4.41,4.41,0,0,1,1.2-1.4,3.65,3.65,0,0,1,2.38-.75c1.42,0,3.53.93,3.53,4.66v6.33h-1.91V16.27c0-2.07-.76-3.31-2.33-3.31a2.52,2.52,0,0,0-2.31,1.77,3.19,3.19,0,0,0-.16,1v6.64h-1.91V15.91c0-1.71-.76-2.95-2.24-2.95a2.67,2.67,0,0,0-2.43,1.95,2.72,2.72,0,0,0-.15,1v6.48h-1.91Z" />
+                <path class="corner-icon-shape-style" d="M187.11,16.89c0,4-2.76,5.71-5.36,5.71-2.91,0-5.15-2.14-5.15-5.54,0-3.59,2.35-5.7,5.33-5.7S187.11,13.6,187.11,16.89Zm-8.53.11c0,2.35,1.35,4.13,3.26,4.13s3.27-1.76,3.27-4.18c0-1.82-.91-4.13-3.22-4.13S178.58,15,178.58,17Z" />
+                <path class="corner-icon-shape-style" d="M189.77,22.35V13.09h-1.51V11.6h1.51v-.51A5.1,5.1,0,0,1,191,7.33a3.73,3.73,0,0,1,2.62-1,4.37,4.37,0,0,1,1.66.31L195,8.16a2.83,2.83,0,0,0-1.25-.25c-1.66,0-2.08,1.47-2.08,3.11v.58h2.59v1.49h-2.59v9.26Z" />
+            </g>
+            <g id="alternative" class="logo-text">
+                <path class="corner-icon-shape-style" d="M94.29,44.3,92.73,49h-2l5.09-15h2.33l5.11,15H101.2L99.6,44.3Zm4.91-1.51-1.47-4.31c-.33-1-.55-1.86-.78-2.73h0c-.22.89-.47,1.8-.76,2.71l-1.46,4.33Z" />
+                <path class="corner-icon-shape-style" d="M105.33,33.24h2V49h-2Z" />
+                <path class="corner-icon-shape-style" d="M112.93,35.17v3.09h2.8v1.49h-2.8v5.8c0,1.33.38,2.08,1.46,2.08a4.33,4.33,0,0,0,1.14-.13l.09,1.47a5,5,0,0,1-1.74.26,2.72,2.72,0,0,1-2.11-.82,4,4,0,0,1-.75-2.8V39.75h-1.67V38.26H111V35.68Z" />
+                <path class="corner-icon-shape-style" d="M118.88,44a3.45,3.45,0,0,0,3.69,3.73,7.14,7.14,0,0,0,3-.55l.33,1.4a8.77,8.77,0,0,1-3.58.66c-3.31,0-5.28-2.17-5.28-5.42s1.91-5.79,5-5.79c3.51,0,4.44,3.08,4.44,5.06a6,6,0,0,1-.07.91Zm5.73-1.4c0-1.24-.51-3.18-2.71-3.18-2,0-2.84,1.83-3,3.18Z" />
+                <path class="corner-icon-shape-style" d="M128.92,41.61c0-1.26,0-2.35-.09-3.35h1.72l.06,2.11h.09a3.23,3.23,0,0,1,3-2.35,2.32,2.32,0,0,1,.55.06v1.85a2.62,2.62,0,0,0-.66-.07,2.75,2.75,0,0,0-2.63,2.51,6.16,6.16,0,0,0-.08.91V49h-1.94Z" />
+                <path class="corner-icon-shape-style" d="M136.28,41.17c0-1.11,0-2-.09-2.91h1.73L138,40h.05a3.92,3.92,0,0,1,3.55-2c1.49,0,3.8.88,3.8,4.57V49h-2v-6.2c0-1.73-.64-3.17-2.48-3.17a2.77,2.77,0,0,0-2.62,2,2.72,2.72,0,0,0-.14.91V49h-1.95Z" />
+                <path class="corner-icon-shape-style" d="M154.56,49l-.16-1.35h-.06a4,4,0,0,1-3.29,1.6,3.07,3.07,0,0,1-3.29-3.09c0-2.6,2.31-4,6.47-4V42a2.22,2.22,0,0,0-2.45-2.49,5.36,5.36,0,0,0-2.8.8L148.54,39a6.66,6.66,0,0,1,3.53-.95c3.29,0,4.09,2.24,4.09,4.39v4a14.43,14.43,0,0,0,.18,2.58Zm-.29-5.49c-2.13,0-4.55.34-4.55,2.43a1.73,1.73,0,0,0,1.84,1.86,2.68,2.68,0,0,0,2.6-1.8,1.93,1.93,0,0,0,.11-.62Z" />
+                <path class="corner-icon-shape-style" d="M161.58,35.17v3.09h2.8v1.49h-2.8v5.8c0,1.33.38,2.08,1.47,2.08a4.19,4.19,0,0,0,1.13-.13l.09,1.47a5,5,0,0,1-1.73.26,2.71,2.71,0,0,1-2.11-.82,4,4,0,0,1-.76-2.8V39.75H158V38.26h1.67V35.68Z" />
+                <path class="corner-icon-shape-style" d="M168.76,35.24a1.21,1.21,0,0,1-2.42,0A1.19,1.19,0,0,1,167.56,34,1.16,1.16,0,0,1,168.76,35.24ZM166.58,49V38.26h1.95V49Z" />
+                <path class="corner-icon-shape-style" d="M172.53,38.26l2.11,6a26.21,26.21,0,0,1,.87,2.76h.07c.24-.89.55-1.78.91-2.76l2.09-6h2L176.4,49h-1.87l-4.08-10.75Z" />
+                <path class="corner-icon-shape-style" d="M183.33,44A3.44,3.44,0,0,0,187,47.72a7,7,0,0,0,3-.55l.34,1.4a8.77,8.77,0,0,1-3.58.66c-3.31,0-5.29-2.17-5.29-5.42s1.91-5.79,5-5.79C190,38,191,41.1,191,43.08a6,6,0,0,1-.07.91Zm5.73-1.4c0-1.24-.51-3.18-2.71-3.18-2,0-2.84,1.83-3,3.18Z" />
+            </g>
+            <g id="facts" class="logo-text">
+                <path class="corner-icon-shape-style" d="M91.87,60.7h8.06v1.62H93.8v5h5.66v1.6H93.8v6.77H91.87Z" />
+                <path class="corner-icon-shape-style" d="M107.57,75.67l-.15-1.35h-.07a4,4,0,0,1-3.29,1.6,3.06,3.06,0,0,1-3.28-3.09c0-2.6,2.31-4,6.46-4v-.22a2.21,2.21,0,0,0-2.44-2.49,5.33,5.33,0,0,0-2.8.8l-.45-1.29a6.67,6.67,0,0,1,3.54-1c3.28,0,4.08,2.25,4.08,4.4v4a15.43,15.43,0,0,0,.18,2.58Zm-.29-5.49c-2.13,0-4.55.34-4.55,2.43a1.73,1.73,0,0,0,1.84,1.86,2.68,2.68,0,0,0,2.6-1.8,1.93,1.93,0,0,0,.11-.62Z" />
+                <path class="corner-icon-shape-style" d="M120,75.27a7.14,7.14,0,0,1-3.09.62,5.11,5.11,0,0,1-5.35-5.48,5.47,5.47,0,0,1,5.78-5.71,6.7,6.7,0,0,1,2.71.55l-.45,1.51a4.58,4.58,0,0,0-2.26-.51c-2.47,0-3.8,1.82-3.8,4.07a3.68,3.68,0,0,0,3.73,4,5.48,5.48,0,0,0,2.4-.54Z" />
+                <path class="corner-icon-shape-style" d="M124.92,61.83v3.09h2.8v1.49h-2.8v5.8c0,1.33.38,2.08,1.47,2.08a4.19,4.19,0,0,0,1.13-.13l.09,1.47a5,5,0,0,1-1.73.26,2.72,2.72,0,0,1-2.11-.82,4,4,0,0,1-.76-2.8V66.41h-1.66V64.92H123V62.34Z" />
+                <path class="corner-icon-shape-style" d="M129.66,73.67a5.07,5.07,0,0,0,2.57.78c1.42,0,2.09-.71,2.09-1.6s-.55-1.44-2-2c-1.93-.69-2.84-1.75-2.84-3,0-1.73,1.4-3.16,3.71-3.16a5.4,5.4,0,0,1,2.64.67l-.49,1.42a4.24,4.24,0,0,0-2.2-.62c-1.15,0-1.8.67-1.8,1.47s.65,1.29,2,1.82c1.86.71,2.82,1.64,2.82,3.24,0,1.89-1.47,3.22-4,3.22a6.15,6.15,0,0,1-3-.73Z" />
+            </g>
+            <g id="logomark">
+                <path class="corner-icon-shape-style" d="M53.09,41.33H49.52V17c0-9.31-4.79-13.47-9.53-13.47-5,0-10,4.71-10,13.7v4.56H26.44V17.27C26.44,5.93,33.25,0,40,0a11.83,11.83,0,0,1,9.16,4.42C51.73,7.5,53.09,11.87,53.09,17Z" />
+                <path class="corner-icon-shape-style" d="M21.83,54.39H17.27C5.93,54.39,0,47.57,0,40.84a11.83,11.83,0,0,1,4.42-9.16C7.5,29.1,11.87,27.74,17,27.74H41.33v3.57H17c-9.31,0-13.47,4.79-13.47,9.53,0,5,4.71,10,13.7,10h4.56Z" />
+                <path class="corner-icon-shape-style" d="M39.76,82.35a11.83,11.83,0,0,1-9.16-4.42c-2.58-3.08-3.94-7.45-3.94-12.62V41h3.57V65.31c0,4.32,1.07,7.9,3.1,10.33a8.36,8.36,0,0,0,6.43,3.14c5,0,10-4.71,10-13.71V60.52h3.57v4.55C53.31,76.41,46.49,82.35,39.76,82.35Z" />
+                <path class="corner-icon-shape-style" d="M62.7,54.61H38.42V51H62.7C67,51,70.61,50,73,47.93a8.32,8.32,0,0,0,3.14-6.42c0-5-4.71-10-13.71-10H57.92V28h4.55c11.34,0,17.28,6.81,17.28,13.55C79.75,47.82,74.41,54.61,62.7,54.61Z" />
+                <path class="corner-icon-shape-style" d="M11,21.51H9.91L5.18,10.3c-.65-1.55-1.31-3.23-2-5H3.1q.19,3.92.2,7.17v9.08H1V2.73h3.3L8.73,13.36c.51,1.21,1.06,2.68,1.67,4.39h.07c.68-1.9,1.23-3.36,1.67-4.39L16.56,2.73h3.3V21.51H17.57V12.43c0-2.12.07-4.52.2-7.17h-.11q-1,2.88-2,5Z" />
+                <path class="corner-icon-shape-style" d="M77.62,12.13A11.94,11.94,0,0,1,77,16.05a8.83,8.83,0,0,1-1.75,3.07,7.89,7.89,0,0,1-2.75,2,8.7,8.7,0,0,1-3.6.72,9.07,9.07,0,0,1-3.69-.72,7.84,7.84,0,0,1-2.76-2,8.93,8.93,0,0,1-1.72-3.07,12.21,12.21,0,0,1-.6-3.92,12,12,0,0,1,.62-3.93A9.1,9.1,0,0,1,62.5,5.12a8,8,0,0,1,2.75-2,8.83,8.83,0,0,1,3.62-.72,8.94,8.94,0,0,1,3.67.72,7.83,7.83,0,0,1,2.75,2A8.9,8.9,0,0,1,77,8.2,12.27,12.27,0,0,1,77.62,12.13Zm-2.28,0a10.35,10.35,0,0,0-.49-3.34,7,7,0,0,0-1.37-2.41,5.77,5.77,0,0,0-2.06-1.47,6.85,6.85,0,0,0-5.09,0,5.77,5.77,0,0,0-2.06,1.47A7,7,0,0,0,62.9,8.79a10.34,10.34,0,0,0-.5,3.34,10,10,0,0,0,.51,3.34,7,7,0,0,0,1.37,2.41,5.75,5.75,0,0,0,2.06,1.46,6.75,6.75,0,0,0,2.56.49,6.59,6.59,0,0,0,2.53-.49,5.8,5.8,0,0,0,2-1.46,7,7,0,0,0,1.37-2.41A10.26,10.26,0,0,0,75.34,12.13Z" />
+                <path class="corner-icon-shape-style" d="M2,80.35,9.69,61.57h2l7.65,18.78H16.84L14.59,74.7H6.74L4.5,80.35Zm8.62-15.86Q9.4,68,8.26,70.87l-.7,1.76h6.22l-.71-1.76c-.77-2-1.55-4.07-2.35-6.38Z" />
+                <path class="corner-icon-shape-style" d="M63.44,80.35H61.16V61.57h11.2v2.07H63.44V69.7h7.91v2.06H63.44Z" />
+            </g>
+        </svg>
+
+        <svg id="bgmusic-icon" class="corner-icon" viewBox="0 0 23.38 21" onClick="togglePlay()">
+            <g>
+                <line class="corner-icon-stroke-style" x1="5.28" y1="4.56" x2="5.28" y2="16.44" />
+                <line class="corner-icon-stroke-style" x1="9.55" y1="1" x2="9.55" y2="20" />
+                <line class="corner-icon-stroke-style" x1="13.83" y1="5.75" x2="13.83" y2="15.25" />
+                <line class="corner-icon-stroke-style" x1="18.1" y1="8.13" x2="18.1" y2="12.88" />
+                <line class="corner-icon-stroke-style" x1="1" y1="8.13" x2="1" y2="12.88" />
+                <line class="corner-icon-stroke-style" x1="22.38" y1="4.56" x2="22.38" y2="16.44" />
+            </g>
+        </svg>
+
+        <svg id="share-icon" class="corner-icon" viewBox="0 0 18.77 24">
+            <g>
+                <circle class="corner-icon-shape-style" cx="15.69" cy="3.08" r="3.08" />
+                <circle class="corner-icon-shape-style" cx="3.08" cy="12" r="3.08" />
+                <circle class="corner-icon-shape-style" cx="15.69" cy="20.92" r="3.08" />
+                <line class="corner-icon-stroke-style" x1="15.38" y1="2.77" x2="3.08" y2="12" />
+                <line class="corner-icon-stroke-style" x1="15.69" y1="20.92" x2="2.77" y2="11.69" />
+            </g>
+        </svg>
+
+        <h1 id="my">My</h1>
+        <h1 id="future">Future</h1>
+        <h1 id="gene">Gene</h1>
+        <img id="my-future-gene-logo" src="images/my-future-gene-logo.png" />
+
+    </section>
+
+
+        <!----------------------- LANDING PAGE ------------------------->
+
+        <secction id="landing-page" class="page-section section">
+
+            <div class="scatter-cells"></div>
+
+            <p id="will-i">Will I be able to...?</p>
+            <div id="landing-content">
+                <img id="trait-icon" src="images/photosynthesise_sunlight.png" alt="Photosynthesis icon" title="Photosynthesise sunlight" />
+
+                <div id="blurb">
+                    <p>Welcome to the Age of the Genome.</p>
+                    <p>The possibilities of genetic research are exploding and based on your genetics, you'll be compatible with some amazing enhancements over the coming years. Echolocation, photosynthesis and super strength, ask yourself “Will I be able to…?”
+                    </p>
+                </div>
+
+                <a onclick="toggleIconColour()" href="#quiz-page" id="take-quiz">
+                    <img src="images/double-arrow.svg" />
+                    <span>TAKE THE QUIZ</span>
+                </a>
+            </div>
+
+
+            <svg id="wave-white-1" class="wave" viewBox="0 0 1565.96 1516.15">
+                <g>
+                    <path d="M1343.83,1387.58c67.6-64.65,75.2-191.15,117-280.09,56.12-119.43,83.67-147,102.36-263.9,15.3-95.74-37.69-245.1-37.69-245.1-67.33-141-122.22-541.19-445.84-583.2s-685.87,1.16-815.5,146.49S118.68,391.84,8.16,747.53c-36,115.85,52.89,313.64,154.5,483,90.47,150.81,247.24,296.29,428.32,285C988.37,1490.6,1160.83,1562.58,1343.83,1387.58Z" />
+                </g>
+            </svg>
+            <svg id="landing-wave" viewBox="0 391.61 2109.15 1516.15">
+                <defs>
+                    <style>.gradient{fill:url(#linear-gradient);}</style>
+                    <linearGradient id="linear-gradient" x1="294.97" y1="1362.2" x2="678.97" y2="782.2" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#ee757b" />
+                        <stop offset="1" stop-color="#f9b152" />
+                    </linearGradient>
+
+                    <mask id="myMask" x="0" y="0" width="2109.15" height="1516.15">
+
+                        <rect fill="white" y="391.61" width="100%" height="100%" />
+                        <path id="shape-1" fill="black" d="M1887,1387.58c67.6-64.65,75.2-191.15,117-280.09,56.12-119.43,83.67-147,102.36-263.9,15.3-95.74-37.69-245.1-37.69-245.1-67.33-141-122.22-541.19-445.84-583.2S937,16.45,807.35,161.78s-145.48,230.06-256,585.75c-36,115.85,52.89,313.64,154.5,483,90.47,150.81,247.24,296.29,428.32,285C1531.56,1490.6,1704,1562.58,1887,1387.58Z" />
+                        <path id="shape-2" fill="black" style="opacity:0.5;" d="M1887,1387.58c67.6-64.65,75.2-191.15,117-280.09,56.12-119.43,83.67-147,102.36-263.9,15.3-95.74-37.69-245.1-37.69-245.1-67.33-141-122.22-541.19-445.84-583.2S937,16.45,807.35,161.78s-145.48,230.06-256,585.75c-36,115.85,52.89,313.64,154.5,483,90.47,150.81,247.24,296.29,428.32,285C1531.56,1490.6,1704,1562.58,1887,1387.58Z" />
+                    </mask>
+                </defs>
+
+                <rect class="gradient" style="width:120%;height:130%;" mask="url(#myMask)" />
+            </svg>
+
+
+        </secction>
+
+        <!----------------------- QUIZ PAGE ------------------------->
+
+        <section id="quiz-page" class="page-section section">
+            <div id="quiz-bg">
+                <img src="images/shape-wave-blue.svg" />
+                <img src="images/shape-wave-orange.svg" />
+            </div>
+
+            <!-----------------------result ------------------------->
+            <section id="quiz-result" class="">
+                <div id="result-portrait" class="portrait-container"></div>
+
+                <div id="result-text">
+                    <span class="result-plain-text">By 2030,</span>
+                    <span id="result-name">Name</span>
+                    <span class="result-plain-text">is very likely to have the trait of</span>
+                    <div id="result-trait">
+                        <img id="result-trait-img" src="images/photosynthesise_sunlight-blue.png" />
+                        <span id="result-trait-name">synthesise sunlight</span>
+                    </div>
+                </div>
+
+            </section>
+            <!----------------------- 7.eyebrow_shape ------------------------->
+            <section id="quiz-eyebrow-shape" class="quiz-questions">
+                <h3>What's the shape of your eyebrows?</h3>
+                <div class="portrait-container"></div>
+
+                <div class="option-area" data-property="eyebrow_shape">
+                    <div class="option-container eye-brow" onclick="calcScore(this)" data-property="straight">
+                        <img src="images/eyebrow-straight.svg" />
+                    </div>
+
+                    <div class="option-container eye-brow" onclick="calcScore(this)" data-property="rounded">
+                        <img src="images/eyebrow-rounded.svg" />
+                    </div>
+
+                    <div class="option-container eye-brow" onclick="calcScore(this)" data-property="angled_arch">
+                        <img src="images/eyebrow-angled-arch.svg" />
+                    </div>
+
+                    <div class="option-container eye-brow" onclick="calcScore(this)" data-property="s_shape">
+                        <img src="images/eyebrow-s-shape.svg" />
+                    </div>
+
+                    <div class="option-container eye-brow" onclick="calcScore(this)" data-property="no_eyebrow">
+                        <img src="images/eyebrow-no-eyebrow.svg" />
+                    </div>
+
+                    <div class="option-container" onclick="calcScore(this)" data-property="none">
+                        <span class="option ear">None of the above/<br>not sure</span>
+                    </div>
+
+                </div>
+
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li class="li-selected"></li>
+                </ol>
+            </section>
+
+            <!----------------------- 6.ear_shape ------------------------->
+            <section id="quiz-ear-shape" class="quiz-questions">
+                <h3>What's the shape of your ears?</h3>
+                <div class="portrait-container"></div>
+
+                <div class="option-area" data-property="ear_shape">
+
+                    <div class="option-container ear" onclick="calcScore(this)" data-property="ear_1">
+                        <svg id="ear-1" class="option" viewBox="0 0 69.94 115.75">
+                            <defs>
+                                <style></style>
+                            </defs>
+                            <g>
+                                <path class="option-stroke-style" d="M67.48,10.86c-18.71-18.7-65-3.94-65,23.63s17.72,78.76,45.29,78.76c17.72,0,19.69-11.82,19.69-11.82" />
+                                <path class="option-stroke-style" d="M45.82,46.3C27,37.85,28.1,81.74,49.75,81.74c15.76,0,13.79-11.81,13.79-11.81" />
+                                <path class="option-stroke-style" d="M16.28,30.55c9.85-9.84,33.47-15.75,41.35-5.91s-2,29.54-15.75,31.51" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="option-container ear" onclick="calcScore(this)" data-property="ear_2">
+                        <svg id="ear-2" class="option" viewBox="0 0 80.94 116.09">
+                            <g>
+                                <path class="option-stroke-style" d="M78.48,11.2c-44-27.11-76,15.32-76,42.89,0,13.78,14.37,26.57,25,38s17.5,21.5,31.29,21.5c17.72,0,19.69-11.82,19.69-11.82" />
+                                <path class="option-stroke-style" d="M56.82,46.64C38,38.19,39.1,82.08,60.75,82.08c15.76,0,13.79-11.81,13.79-11.81" />
+                                <path class="option-stroke-style" d="M52.88,56.49c13.78-2,23.63-21.66,15.75-31.51s-31.71-4.14-41.35,5.91c-9.78,10.2-14.78,16.2-8.78,25.2" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="option-container ear" onclick="calcScore(this)" data-property="ear_3">
+                        <svg id="ear-3" class="option" viewBox="0 0 60.19 125.53">
+                            <g>
+                                <path class="option-stroke-style" d="M53.77,20.65C46,12.83,41.07,2.93,28.8,2.53c-31-1-26,22-26,38,0,13.78,2.12,48.82,9,58S20.3,123,34.08,123c17.72,0,19.69-11.81,19.69-11.81" />
+                                <path class="option-stroke-style" d="M32.11,56.09c-18.8-8.46-17.19,30.67,3.94,35.44,17.75,4,21.75-9,21.75-9" />
+                                <path class="option-stroke-style" d="M15.8,21.53c9.84-9.84,20.12,3.16,28,13S42,64,28.18,65.93" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="option-container ear" onclick="calcScore(this)" data-property="ear_4">
+                        <svg id="ear-4" class="option" viewBox="0 0 83.46 127.26">
+                            <g>
+                                <path class="option-stroke-style" d="M81.48,20.67c-9.36-9.35-21.07-21.91-35-17.11-6.23,2.15-16,11.69-23,17-8.64,6.54-21,13.39-21,21,0,20.67,10.45,33.54,31,50,6.85,5.48,8.43,29.92,15,32,19,6,33-12.32,33-12.32" />
+                                <path class="option-stroke-style" d="M59.82,56.11C41,47.66,42.1,91.55,63.75,91.55c15.76,0,13.79-11.81,13.79-11.81" />
+                                <path class="option-stroke-style" d="M55.88,66c13.78-2,19.5-30.56,11.62-40.4s-31.16-2.85-41,7c-10,10-13,14-8,22" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="option-container ear" onclick="calcScore(this)" data-property="ear_5">
+                        <svg id="ear-5" class="option" viewBox="0 0 73.49 116.25">
+                            <g>
+                                <path class="option-stroke-style" d="M68,10.86C49.25-7.84,3,6.92,3,34.49,3,47,.45,65.53,7,80.75c7.9,18.41,31.91,33,47,33,17.72,0,17-21,17-21" />
+                                <path class="option-stroke-style" d="M48.16,43.51c-16.84-7.57-15.87,31.74,3.52,31.74C65.79,75.25,64,64.67,64,64.67" />
+                                <path class="option-stroke-style" d="M21.71,29.4c8.82-8.81,30-14.1,37-5.28S57,50.56,44.63,52.33" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="option-container" onclick="calcScore(this)" data-property="none">
+                        <span class="option ear">None of the above/<br>not sure</span>
+                    </div>
+
+                </div>
+
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li class="li-selected"></li>
+                    <li></li>
+                </ol>
+            </section>
+
+            <!----------------------- 5.hair_colour ------------------------->
+            <section id="quiz-hair-colour" class="quiz-questions">
+                <h3>What's the colour of your hair?</h3>
+
+                <div class="portrait-container"></div>
+
+                <div class="option-area" data-property="hair_colour">
+
+                    <div onclick="calcScore(this)" class="option-container" data-property="blonde">
+                        <svg id="hair-colour-blonde" viewBox="0 0 64.89 59.04">
+                            <path id="hair-colour-blonde" class="hair-stroke" d="M6.61,1.36c-11.82,18.16,4.47,33.9,16.05,32.85s18-12.63,9.36-16.72S9.08,23.31,12.16,37.21s14,12.06,23.67,6.07c14.53-9,25.75,6.85,26.57,15.53" /></svg>
+                    </div>
+
+                    <div onclick="calcScore(this)" class="option-container" data-property="gold">
+                        <svg id="hair-colour-gold" viewBox="0 0 49.52 59.96">
+                            <path id="hair-colour-gold" class="cls-1" d="M2.3,16.78C9.07,1,33.17-4.33,36.75,14.41c2.34,12.23-19.57,12.22-24.3,20.3C2.3,52.05,23.21,68,48,48.53" /></svg>
+                    </div>
+
+                    <div onclick="calcScore(this)" class="option-container" data-property="red">
+                        <svg id="hair-colour-red" viewBox="0 0 47 58.48">
+                            <path id="hair-colour-red" class="cls-1" d="M38.44,2.09C27.12,9.51,16.05,18.36,32.58,31.78c10.91,8.86,17.32,19.84,5.85,21.64S15.57,31.12,6.71,34.57c-11,4.29,0,38.12,28,11" /></svg>
+                    </div>
+
+                    <div onclick="calcScore(this)" class="option-container" data-property="brown">
+                        <svg id="hair-colour-brown" viewBox="0 0 56.61 55.87">
+                            <path id="hair-colour-brown" class="cls-1" d="M1.08,43.24c10.58,5.08,15.2-8.4,16.91-20.91s7.2-20,16.93-19.83S58,15.64,53,29.23s-18.54,6.9-21.92,15.11,5.92,12,13.54,6.3" /></svg>
+                    </div>
+
+                    <div onclick="calcScore(this)" class="option-container" data-property="balck">
+                        <svg id="hair-colour-black" viewBox="0 0 69.58 53.12">
+                            <path id="hair-colour-black" class="cls-1" d="M.92,19.59C30.61,7.85,61.29,26,41.21,40.15S8.85,54,14.33,40.15s24.83.72,28.15-21.92C44.29,5.94,69.23,2.48,69.23,2.48" /></svg>
+                    </div>
+
+                    <div onclick="calcScore()" class="option-container" data-property="none">
+                        <span onclick="calcScore(this)" class="option ear">None of the above/<br>not sure</span>
+                    </div>
+
+                </div>
+
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li class="li-selected"></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </section>
+
+            <!----------------------- 4.skin_colour ------------------------->
+            <section id="quiz-skin-colour" class="quiz-questions">
+                <h3>What's the colour of your skin?</h3>
+
+                <div class="portrait-container"></div>
+
+                <div class="option-area" data-property="skin_colour">
+                    <div onclick="calcScore(this)" class="option-container" data-property="very_fair">
+                        <img src="images/skin-colour-very-fair.svg" />
+                    </div>
+
+                    <div onclick="calcScore(this)" class="option-container" data-property="fair">
+                        <img src="images/skin-colour-fair.svg" />
+                    </div>
+
+                    <div onclick="calcScore(this)" class="option-container" data-property="olive">
+                        <img src="images/skin-colour-olive.svg" />
+                    </div>
+
+                    <div onclick="calcScore(this)" class="option-container" data-property="brown">
+                        <img src="images/skin-colour-brown.svg" />
+                    </div>
+
+                    <div onclick="calcScore(this)" class="option-container" data-property="black">
+                        <img src="images/skin-colour-black.svg" />
+                    </div>
+
+                    <div onclick="calcScore(this)" class="option-container" data-property="none">
+                        <span class="option ear">None of the above/<br>not sure</span>
+                    </div>
+
+                </div>
+
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li class="li-selected"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </section>
+
+            <!----------------------- 3.eye_colour ------------------------->
+            <section id="quiz-eye-colour" class="quiz-questions">
+                <h3>What's the colour of your eyes?</h3>
+
+                <div class="portrait-container"></div>
+
+                <div class="option-area" data-property="eye_colour">
+                    <div class="option-container" onclick="calcScore(this)" data-property="dark_brown">
+                        <img src="images/eye-colour-dark-brown.svg" />
+                    </div>
+
+                    <div class="option-container" onclick="calcScore(this)" data-property="light_brown">
+                        <img src="images/eye-colour-light-brown.svg" />
+                    </div>
+
+                    <div class="option-container" onclick="calcScore(this)" data-property="hazelnut">
+                        <img src="images/eye-colour-hazelnut.svg" />
+                    </div>
+
+                    <div class="option-container" onclick="calcScore(this)" data-property="blue">
+                        <img src="images/eye-colour-blue.svg" />
+                    </div>
+
+                    <div class="option-container" onclick="calcScore(this)" data-property="green">
+                        <img src="images/eye-colour-green.svg" />
+                    </div>
+
+                    <div onclick="calcScore()" class="option-container" data-property="none">
+                        <span class="option ear">None of the above/<br>not sure</span>
+                    </div>
+
+                </div>
+
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li class="li-selected"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </section>
+
+            <!----------------------- 2.avatar ------------------------->
+            <section id="quiz-avatar" class="quiz-questions">
+                <h3> Choose an avatar:</h3>
+                <div class="option-area" data-property="avatar">
+                    <div class="option-container" onclick="calcScore(this)" data-property="default">
+                        <img src="images/avatar-1.svg" />
+                    </div>
+
+                    <div class="option-container" onclick="calcScore(this)" data-property="male">
+                        <img src="images/avatar-2.svg" />
+                    </div>
+
+                    <div class="option-container" onclick="calcScore(this)" data-property="female">
+                        <img src="images/avatar-3.svg" />
+                    </div>
+
+                </div>
+
+                <ol>
+                    <li></li>
+                    <li class="li-selected"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </section>
+
+            <!----------------------- 1.name ------------------------->
+            <section id="quiz-name" class="quiz-questions">
+                <h3>What is your name?</h3>
+
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+                    <button type="button" id="submitName">Confirm</button>
+                </form>
+
+                <ol>
+                    <li class="li-selected"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </section>
+
+            
+            <a href="#landing-page" onclick="toggleIconColour()"><div class="back"></div></a>
+            <a href="#traits-page" id="skip-quiz" class="skip" onclick="toggleIconColour()">SKIP THE QUIZ</a>
+        </section>
+
+
+        <!----------------------- TRAITS PAGE ------------------------->
+
+        <section id="traits-page" class="page-section section">
+            <h2 id="traitsHeading">Genes<br> of<br> Tomorrow.</h2>
+            <div id='traitsScroll'>
+                <div class="traitBorder">
+
+                    <div class="traitBox" id="tbox1">
+                        <p class="trname">Ageless Skin</p>
+                        <img src="images/no_wrinkles.png" class="traitImg" alt="placeholder 1" />
+                        <div class="traitTextBox" tabindex="1" id="trTxt1">
+                            <h3>Ageless Skin</h3>
+                            <p>Soon some members of the skin will be able to escape the toll of time on their skin. Wrinkles will form over a much longer time than normal due to a genetic enhancement taken from the lobster which enables constant regeneration of new, young skin. </p>
+                        </div>
+                    </div>
+
+                    <div class="traitBox" id="tbox2">
+                        <p class="trname">Mood-Colour Iris</p>
+                        <img src="images/mood_dependant_iris_colour.png" class="traitImg" alt="placeholder 1" />
+                        <div class="traitTextBox" id="trTxt2">
+                            <h3>Mood-Colour Iris</h3>
+                            <p>The DNA of South American jelly fish has been synthesised into liquid which interacts with the microbiology of the iris resulting in a shifting eye colour dependant on the mood of the host. </p>
+                        </div>
+                    </div>
+
+
+                    <div class="traitBox" id="tbox3">
+                        <p class="trname">Limb Regeneration</p>
+                        <img src="images/limb_regeneration.png" class="traitImg" alt="placeholder 3" />
+                        <div class="traitTextBox" id="trTxt3">
+                            <h3>Limb Regeneration</h3>
+                            <p>Just like a lizard’s tail regrowing, bones to muscle to skin, this trait has been found to lay dormant in some humans and can be activated when stimulated by an injection of the modified spinal fluid of the common penny lizard. </p>
+                        </div>
+                    </div>
+
+                    <div class="traitBox" id="tbox4">
+                        <p class="trname">Super Strength</p>
+                        <img src="images/superhuman_strength.png" class="traitImg" alt="placeholder 1" />
+                        <div class="traitTextBox" id="trTxt4">
+                            <h3>Super Strength</h3>
+                            <p>By taking the structures of dolphin musculatory systems, humans can be enhanced to improve muscle use efficiency and strength by up to 130% without any additional muscle being built.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="traitBox" id="tbox5">
+                        <p class="trname">Eagle Vision</p>
+                        <img src="images/superhuman_vision.png" class="traitImg" alt="placeholder 5" />
+                        <div class="traitTextBox" id="trTxt5">
+                            <h2>Eagle Vision</h2>
+                            <p>For those with the fitting genes, there is a new treatment which will enhance your vision to the strength of as a bald eagle. A theory from the 80s which proposed the potential for the transplanting of eagle dna has recently been confirmed as effective. </p>
+                        </div>
+                    </div>
+
+                    <div class="traitBox" id="tbox6">
+                        <p class="trname">Expanded Colour Vision</p>
+                        <img src="images/superhuman_colour_vision.png" class="traitImg" alt="placeholder 6" />
+                        <div class="traitTextBox" id="trTxt6">
+                            <h3>Expanded Colour Vision</h3>
+                            <p>There are so many frequencies of electromagnetic spectrum invisible to humans that are visible to creatures such as the Mantis Shrimp. If you are compatible, by 2026 there will be a genetic supplement allowing the user to see up to 6 new colours for multiple hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="traitBox" id="tbox7">
+                        <p class="trname">Photographic Memory</p>
+                        <img src="images/photographic_memory.png" class="traitImg" alt="placeholder 7" />
+                        <div class="traitTextBox" id="trTxt7">
+                            <h3>Photographic Memory</h3>
+                            <p>Tired of studying for tests? Imagine being able to remember anything you’ve seen and call on it instantly. Well the code for photographic memory has been pinpointed and up to ⅓ of the population is estimated to carry the compatible genes.</p>
+                        </div>
+                    </div>
+
+                    <div class="traitBox" id="tbox8">
+                        <p class="trname">Enhanced Lucid Dreaming</p>
+                        <img src="images/increase_lucid_dream.png" class="traitImg" alt="placeholder 8" />
+                        <div class="traitTextBox" id="trTxt8">
+                            <h2>Enhanced Lucid Dreaming</h2>
+                            <p>While not much is known about lucid dreaming, alterations made to a bacteria found on common button cap mushrooms produce a substance that permanently rewires the brain, particularly in redheads, to have more vivid and lucid dreams. </p>
+                        </div>
+                    </div>
+
+                    <div class="traitBox" id="tbox9">
+                        <p class="trname">Fast Reaction Time</p>
+                        <img src="images/fast_reaction_time.png" class="traitImg" alt="placeholder 9" />
+                        <div class="traitTextBox" id="trTxt9">
+                            <h3>Fast Reaction Time</h3>
+                            <p>The lightning fast reaction and striking types of the king kobra has been isolated to a select few genes which are prominent in those with particular eye colours and skin types. How would you like to be able to move your hands faster than the blink of an eye? </p>
+                        </div>
+                    </div>
+
+                    <div class="traitBox" id="tbox10">
+                        <p class="trname">Echolocation </p>
+                        <img src="images/echolocation.png" class="traitImg" alt="placeholder 10" />
+                        <div class="traitTextBox" id="trTxt10">
+                            <h3>Echolocation </h3>
+                            <p>By studying the ears of fruit bats, it is estimated that by 2030 humans will be able to undergo surgery and genetic treatment to see not with light, but by the reflection of sound. </p>
+                        </div>
+                    </div>
+
+                    <div class="traitBox" id="tbox11">
+                        <p class="trname">Photosynthesise Sunlight </p>
+                        <img src="images/photosynthesise_sunlight.png" class="traitImg" alt="placeholder 11" />
+                        <div class="traitTextBox" id="trTxt11">
+                            <h3>Photosynthesise Sunlight</h3>
+                            <p>Using the genome of blue-green algae, a liquid solution has been developed when when applied to the eyes enables the conversion of sunlight into energy. Scientists have measured 800 kj per day of energy production. </p>
+                        </div>
+                    </div>
+
+                    <div class="traitBox" id="tbox12">
+                        <p class="trname">Halve need for sleep</p>
+                        <img src="images/halve_need_for_sleep.png" class="traitImg" alt="placeholder 12" />
+                        <div class="traitTextBox" id="trTxt12">
+                            <h3>Halve need for sleep</h3>
+                            <p>Borrowing the DNA of both sharks and migratory birds, you may only need to sleep for 3 hours per night to get the feeling a full night's rest. </p>
+                        </div>
+                    </div>
+                    
+                    <div class="traitBox" id="tbox13">
+                        <p class="trname">Night vision</p>
+                        <img src="images/night_vision.png" class="traitImg" alt="placeholder 12" />
+                        <div class="traitTextBox" id="trTxt13">
+                            <h3>Night vision</h3>
+                            <p>With the genes of the nocturnal golden possum of Australia, scientists are working on a genetic modification for humans which would allow rapid  and ultra-wide dilation of the pupil allowing for night vision superior to any current human.</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            
+            <a href="#quiz-page" onclick="toggleIconColour()"><div class="back"></div></a>
+            <a id="skip-traits" class="skip" href="#research-page">JOIN OUR RESEARCH</a>
+        </section>
+
+
+        <!----------------------- RESEARCH PAGE ------------------------->
+
+        <section id="research-page" class="page-section section">
+
+            <video class="rbackground" src="videos/research_Background_2.mp4" type="video/mp4" autoplay loop muted></video>
+
+
+            <h2 id="JoinTheResearch">Join the Research.</h2>
+
+            <p id="resBlurb">We’ve teamed up with the University of Alternative Science to continue the kind groundbreaking genetic research shown here. We are on the hunt for unique individuals to join our research. <br><strong>Sign up now!</strong></p>
+
+
+
+            <div id="signupBoundary">
+                
+                    <ol id="signupList">
+                        <li class="research-tab tabOnFocus" onclick="tab1(this)">1</li>
+                        <li class="research-tab" onclick="tab2(this)">2</li>
+                        <li class="research-tab" onclick="tab3(this)">3</li>
+                    </ol>
+                
+
+
+                <h3 class="signupHeading" id="signupHeading1">Camouflaging Skin Pigment</h3>
+                <h3 class="signupHeading" id="signupHeading2">Slowed Metabolic Rate</h3>
+                <h3 class="signupHeading" id="signupHeading3">Low Frequency Detection</h3>
+                
+                <div class="testInfo" id="signup1">
+                    <h4>Location: </h4>
+                    <p>UAS Research, Glen Waverley, Victoria</p>
+                    <h4>Duration:</h4>
+                    <p>1 hour weekly session, 12 weeks</p>
+                    <h4>Date:</h4>
+                    <p>January - March 2019</p>
+                    <h4>Pay:</h4>
+                    <p>$120 per session</p>
+                    <h4>Candidates: </h4>
+                    <p>Green eyes, Blonde Hair, Pointed Ears, Very Fair skin</p>
+                    <h4>Description:</h4>
+                    <p>UAS is exploring how humans may be able to camouflage their skin tones like the giant pacific octopus. Participants will be administered medication and monitored weekly for 12 weeks.</p>
+
+
+                    <form action="" class="signupForm">
+
+                        <!-- text input field -->
+                        <p>
+                            <label for="name"></label>
+                            <input type="text" id="name" placeholder="Your name" />
+                        </p>
+
+                        <!-- number input field -->
+                        <p>
+                            <label for="email"></label>
+                            <input type="" id="email" placeholder="Your email address" />
+                        </p>
+
+                        <p>
+                            <input type="checkbox" class="signupCheckbox"> 
+                            <label for="signupCheckbox">Please email me about future experiments and exhibitions</label>
+                        </p>
+
+                        <button type="submit">Sign up</button>
+                    </form>
+                </div>
+                
+                
+                <div class="testInfo" id="signup2">
+                    <h4>Location: </h4>
+                    <p>UAS Research, Glen Waverley, Victoria</p>
+                    <h4>Duration:</h4>
+                    <p>4 hours</p>
+                    <h4>Date:</h4>
+                    <p>December 2018</p>
+                    <h4>Pay:</h4>
+                    <p>$200</p>
+                    <h4>Candidates: </h4>
+                    <p>brown eyes, blonde hair, olive skin</p>
+                    <h4>Description:</h4>
+                    <p>Could humans go months without eating like the arctic wolf? Join preliminary testing of a gut bacteria based medicine which may be the link to end starvation.</p>
+
+
+                    <form action="" class="signupForm">
+
+                        <!-- text input field -->
+                        <p>
+                            <label for="name"></label>
+                            <input type="text" id="name" placeholder="Your name" />
+                        </p>
+
+                        <!-- number input field -->
+                        <p>
+                            <label for="email"></label>
+                            <input type="" id="email" placeholder="Your email address" />
+                        </p>
+
+                        <p>
+                            <input type="checkbox" class="signupCheckbox"> 
+                            <label for="signupCheckbox">Please email me about future experiments and exhibitions</label>
+                        </p>
+
+                        <button type="submit">Sign up</button>
+                    </form>
+                </div>
+                
+                
+                
+                <div class="testInfo" id="signup3">
+                    <h4>Location: </h4>
+                    <p>UAS Research, Glen Waverley, Victoria</p>
+                    <h4>Duration:</h4>
+                    <p>2 weeks inside lab</p>
+                    <h4>Date:</h4>
+                    <p>November 2018</p>
+                    <h4>Pay:</h4>
+                    <p>$8000</p>
+                    <h4>Candidates: </h4>
+                    <p> Hazelnut eyes, black hair,  dark Skin</p>
+                    <h4>Description:</h4>
+                    <p>There is a world of sounds that human perception cannot reach, such as whale calls and tectonic movement. Be part of a 2 week monitored retreat where this boundary is challenged.</p>
+
+
+                    <form action="" class="signupForm">
+
+                        <!-- text input field -->
+                        <p>
+                            <label for="name"></label>
+                            <input type="text" id="name" placeholder="Your name" />
+                        </p>
+
+                        <!-- number input field -->
+                        <p>
+                            <label for="email"></label>
+                            <input type="" id="email" placeholder="Your email address" />
+                        </p>
+
+                        <p>
+                            <input type="checkbox" class="signupCheckbox"> 
+                            <label for="signupCheckbox">Please email me about future experiments and exhibitions</label>
+                        </p>
+
+                        <button type="submit">Sign up</button>
+                    </form>
+                </div>
+            </div>
+            
+            <a href="#traits-page"><div class="back"></div></a>
+            <a href="#museums-page" class="skip" id="skip-research">SKIP</a>
+        </section>
+
+
+        <!----------------------- OTHER EXHIBITION PAGE ------------------------->
+
+        <section id="museums-page" class="page-section section">
+            
+                <h2 id="more-exh">More Exhibits Soon!</h2>
+                <h3>Come back for more alternative facts as they’re released</h3>
+            
+            <div id="balckOverlay"></div>
+            
+            <div class="musbox">
+                
+                <div class="mus" onmouseover="musMouseOver(this)" onmouseout="musMouseOut(this)" id="mus1">
+                    <div class="mustitle">
+                        <h3> Wildlife of Atlantis</h3>
+                        <h4>Nov 20</h4>
+                    </div>
+                    <img src="images/Atlantis2.png" class="musImg" id="musImg1" alt="museum1 logo">
+                    <div class="musDes">
+                        <p> See the fauna of ancient sunken atlantis recreated in 3D based off references taken from sacred texts from Egypt and Sumeria. The last one will shock you! </p>
+                    </div>
+                </div>
+                
+                <div class="mus" onmouseover="musMouseOver(this)" onmouseout="musMouseOut(this)" id="mus2">
+                    <div class="mustitle">
+                        <h3> The Sun is a black hole?</h3>
+                        <h4>Dec 15</h4>
+                    </div>
+                    <img src="images/ablackhole.png" class="musImg" id="musImg2" alt="museum1 logo">
+                    <div class="musDes">
+                        <p> There is mounting evidence that the sun we orbit is really a black hole emitting light sucked in from its other side. You won’t believe who’s theory this is. </p>
+                    </div>
+                </div>
+                
+                <div class="mus" onmouseover="musMouseOver(this)" onmouseout="musMouseOut(this)" id="mus3">
+                    <div class="mustitle">
+                        <h3> 8 Times Aliens saved humanity</h3>
+                        <h4>Dec 22</h4>
+                    </div>
+                    <img src="images/aliens.png" class="musImg" id="musImg3" alt="museum1 logo">
+                    <div class="musDes">
+                        <p> From natural disaster to apocalyptic war, extraterrestrial entities have presented themselves at times of imminent disaster and saved humanity. Can you guess the events? </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <a href="#research-page"><div class="back"></div></a>
+        </section>
+    
+
+    <script type="text/javascript" src="javascript/lib/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="javascript/lib/TweenMax.min.js"></script>
+    <script type="text/javascript" src="javascript/lib/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="javascript/lib/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="javascript/lib/animation.gsap.js"></script>
+    <script type="text/javascript" src="javascript/quiz-data.js"></script>
+    <script type="text/javascript" src="javascript/javascript.js"></script>
+
+</body>
+
+</html>
+
+
+<!--------------------------- RESOURCES USED --------------------------->
+<!-- https://codepen.io/rstacruz/pen/oxJqNv --Wave effect-->
+<!--https://stackoverflow.com/questions/40423305/is-it-possible-to-invert-the-clipping-of-svg  --masking technique->
+<!--<a href='https://www.freepik.com/free-vector/black-social-media-logo-collection_1011932.htm'>Designed by Freepik</a>-->

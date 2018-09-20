@@ -1,0 +1,13 @@
+<svg viewBox="0 391.61 2109.15 1516.15">
+    <defs>
+        <style>.cls-1{fill:#f9b152;}.cls-2{fill:url(#linear-gradient);}</style>
+        <linearGradient id="linear-gradient" x1="294.97" y1="1362.2" x2="678.97" y2="782.2" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ee757b"/><stop offset="1" stop-color="#f9b152"/></linearGradient>
+    
+   <mask id="myMask" x="0" y="0" width="1366" height="769" >
+
+       <rect fill="white" y="391.61" width="1366" height="769"/>
+       <path id="shape" fill="black" d="M1887,1387.58c67.6-64.65,75.2-191.15,117-280.09,56.12-119.43,83.67-147,102.36-263.9,15.3-95.74-37.69-245.1-37.69-245.1-67.33-141-122.22-541.19-445.84-583.2S937,16.45,807.35,161.78s-145.48,230.06-256,585.75c-36,115.85,52.89,313.64,154.5,483,90.47,150.81,247.24,296.29,428.32,285C1531.56,1490.6,1704,1562.58,1887,1387.58Z"/>
+   </mask></defs>
+
+    <rect class="cls-2" y="391.61" width="1366" height="769" mask="url(#myMask)"/>
+    </svg>
