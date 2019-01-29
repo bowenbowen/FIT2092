@@ -19,9 +19,10 @@ var svgDefault = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270.14 31
 $(function () {
     
     $('.portrait-container').html(svgDefault);
+    $("form").submit(function() { return false; });
 
     $('#moaf-logo').mouseenter(function () {
-        TweenMax.staggerFromTo(".logo-text", 2, {
+        TweenMax.staggerFromTo(".logo-text", 1.5, {
             scale: 0,
             opacity: 0,
             ease: Elastic.easeOut,
@@ -34,7 +35,7 @@ $(function () {
         }, 0.2);
     });
     $('#moaf-logo').mouseleave(function () {
-        TweenMax.staggerTo(".logo-text", 2, {
+        TweenMax.staggerTo(".logo-text", 1.5, {
             scale: 0,
             opacity: 0,
             ease: Elastic.easeOut,
@@ -44,8 +45,13 @@ $(function () {
     //    https://greensock.com/stagger
 
 
-
-    /* ----------------------- Landing page drifting elements ----------------------- */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* ================================================ LANDING PAGE ================================================ */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    
+    /* ======================================= Landing page drifting elements ======================================= */
     /* https://codepen.io/chuckrector/pen/bpLBKE */
     var cells = [
       'images/float-1.svg',
@@ -103,7 +109,7 @@ $(function () {
         force3D: true
     }, 0.2);
 
-    /* ----------------------- Landing page wave effect ----------------------- */
+    /* ======================================= Landing page wave effect ======================================= */
 
     TweenMax.to("#shape-1", 15, {
         rotation: 360,
@@ -119,7 +125,7 @@ $(function () {
         repeat: -1
     });
 
-    /* ----------------------- Landing page abilities display ----------------------- */
+    /* ======================================= Landing page abilities display ======================================= */
     var abilitiesIcons = [
       'images/photosynthesise_sunlight.png',
       'images/superhuman_vision.png',
@@ -170,7 +176,7 @@ $(function () {
     });
 
 
-    /* ----------------------- Landing page scroll ----------------------- */
+    /* ======================================= Landing page scroll ======================================= */
 
     var controller = new ScrollMagic.Controller();
 
@@ -190,7 +196,7 @@ $(function () {
         .addTo(controller);
 
 
-    /* ----------------------- Landing-quiz page scroll ----------------------- */
+    /* ======================================= Landing-quiz page scroll ======================================= */
 
     var scrollMy = new ScrollMagic.Scene({
             triggerElement: "#quiz-page",
@@ -239,9 +245,15 @@ $(function () {
             opacity: '0'
         })
         .addTo(controller);
+    
+    
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
+    /* ================================================= QUIZ PAGE ================================================== */
+    /* ============================================================================================================== */
+    /* ============================================================================================================== */
 
-
-    /* ----------------------- Name form ----------------------- */
+    /* ======================================= Name form ======================================= */
 
     $('#quiz-name').css({
         'opacity': '1',
@@ -260,11 +272,19 @@ $(function () {
                 'opacity': '1',
                 'visibility': 'visible'
             });
+        } else {
+            $('#name').focus();
         }
     });
+    $('#name').keyup(function(event){
+        event.preventDefault();
+          if (event.keyCode === 13) {
+    // Trigger the button element with a click
+     $('#submitName').click();
+    }});
 
 
-    /* ----------------------- Avatar----------------------- */
+    /* ======================================= Avatar======================================= */
 
     $('#quiz-avatar .option-container').on('click', function () {
         $('#quiz-avatar').css({
@@ -277,7 +297,7 @@ $(function () {
         });
     });
 
-    /* ----------------------- Eye colour----------------------- */
+    /* ======================================= Eye colour======================================= */
 
     $('#quiz-eye-colour .option-container').on('click', function () {
         $('#quiz-eye-colour').css({
@@ -290,7 +310,7 @@ $(function () {
         });
     });
 
-    /* ----------------------- Skin tone----------------------- */
+    /* ======================================= Skin tone======================================= */
 
     $('#quiz-skin-colour .option-container').on('click', function () {
         $('#quiz-skin-colour').css({
@@ -303,7 +323,7 @@ $(function () {
         });
     });
 
-    /* ----------------------- Hair colour ----------------------- */
+    /* ======================================= Hair colour ======================================= */
 
     $('#quiz-hair-colour .option-container').on('click', function () {
         $('#quiz-hair-colour').css({
@@ -316,7 +336,7 @@ $(function () {
         });
     });
 
-    /* ----------------------- Ear shape----------------------- */
+    /* ======================================= Ear shape ======================================= */
 
     $('#quiz-ear-shape .option-container').on('click', function () {
         $('#quiz-ear-shape').css({
@@ -329,7 +349,8 @@ $(function () {
         });
     });
 
-    /* ----------------------- Eyebrow shape----------------------- */
+    /* ======================================= Eyebrow shape ======================================= */
+    /* ======================================= Show results ======================================= */
 
     $('#quiz-eyebrow-shape .option-container').on('click', function () {
         $('#quiz-eyebrow-shape').css({
@@ -339,11 +360,14 @@ $(function () {
         $('#quiz-result').css({
             'visibility': 'visible'
         });
+        $('.portrait-container svg').css({
+            'left': '70%'
+        })
     });
 
 });
 
-/* ----------------------- Calculate scores ----------------------- */
+/* ======================================= Calculate scores ======================================= */
 
 var eyeScore,
     skinScore,
@@ -443,10 +467,24 @@ function calcFinalScore() {
 
     $('#result-trait-img').attr('src', 'images/' + keyTrait + '-blue.png');
     $('#result-trait-name').text(displayNames[keyTrait]);
+    $('#quiz-result').css({'opacity': '1','visibility': 'visible'});
 }
 
+/* ======================================= Switch between questions ======================================= */
 
-/* ----------------------- Background music ----------------------- */
+function getChildIndex(elem){
+    var  i= 0;
+    while((elem=elem.previousElementSibling)!=null) ++i;
+    return i;
+}
+//https://stackoverflow.com/questions/4649699/is-it-possible-to-get-elements-numerical-index-in-its-parent-node-without-loopi
+
+$('.quiz-questions ol li').on('click', function(){
+    alert();
+});
+
+
+/* ======================================= Background music ======================================= */
 
 var bgmusic = document.getElementById("bgmusic");
 //^ beaware of using jQuery here https://stackoverflow.com/questions/23048153/audio-clip-paused-is-undefined-when-using-jquery
@@ -469,7 +507,7 @@ function togglePlay() {
 
 };
 
-/* ----------------------- Corner icon colour ----------------------- */
+/* ======================================= Corner icon colour ======================================= */
 
 function toggleIconColour() {
     if ($('.corner-icon-stroke-style').css('stroke') == 'rgb(255, 255, 255)') {
@@ -490,42 +528,26 @@ function toggleIconColour() {
 }
 
 
-/* ----------------------- Update portrait ----------------------- */
+/* ======================================= Update portrait ======================================= */
 
 var
     userSkinSvg = 'user-skin-default',
     userEyeSvg = 'user-eye-blue',
     userHairColourSvg = 'cls-2',
     userEyebrowSvg = '<line id="eyebrow-default" class="cls-1" x1="184.64" y1="108.53" x2="229.64" y2="108.53"/>',
-    userHair = '<path id="hair-default" class="cls-2" d="M87.16,28.7C93.9,9.36,137.34-.64,148.89,0,136.44,8,138,8.08,138,8.08s43.79-9.73,81.65,20.62C237.1,42.7,249.1,76,249.1,76s-16.92-4.67-24.46-6c-2.43,12.82-26.87,24.33-40.2,33-4.8-13.76-12.5-17.5-12.5-17.5s-31,62.72-41,85c-2.67-15.91-12.44-50.42-12.44-50.42S67.77,107.93,69.77,152c.73,16.07,18.87,49.38,30.08,77.38C68,220.36,63.21,206.54,62,210.69c-5.36,18-12.16,31.82-16.21,37.84-12.63-29.17-26-75.17-26.67-90.12-7.33,12.12-11.33,12.12-11.33,12.12S3.33,84.44,33.14,68c-9.09-4-18.6-7.85-18.6-7.85S53.89,27.36,87.16,28.7Z"/>',
+    userHairSvg = '<path id="hair-default" class="user-hair-blue" d="M87.16,28.7C93.9,9.36,137.34-.64,148.89,0,136.44,8,138,8.08,138,8.08s43.79-9.73,81.65,20.62C237.1,42.7,249.1,76,249.1,76s-16.92-4.67-24.46-6c-2.43,12.82-26.87,24.33-40.2,33-4.8-13.76-12.5-17.5-12.5-17.5s-31,62.72-41,85c-2.67-15.91-12.44-50.42-12.44-50.42S67.77,107.93,69.77,152c.73,16.07,18.87,49.38,30.08,77.38C68,220.36,63.21,206.54,62,210.69c-5.36,18-12.16,31.82-16.21,37.84-12.63-29.17-26-75.17-26.67-90.12-7.33,12.12-11.33,12.12-11.33,12.12S3.33,84.44,33.14,68c-9.09-4-18.6-7.85-18.6-7.85S53.89,27.36,87.16,28.7Z"/>',
     userSkinStrokeSvg = "cls-1",
     userEarSvg = '<g id="ear-1" class="' + userSkinStrokeSvg + '"><path d="M114.64,134.53c-9.5-9.5-33-2-33,12s9,40,23,40c9,0,10-6,10-6"/><path d="M103.64,152.53c-9.55-4.29-9,18,2,18,8,0,7-6,7-6"/><path  d="M88.64,144.53c5-5,17-8,21-3s-1,15-8,16"/></g>';
 
 
 function updatePortrait() {
-
-    if (userHair == "blonde") {
-        userHairColourSvg = 'user-hair-blonde';
-        userHairColourStrokeSvg = 'user-hair-stroke-blonde';
-        userEyebrowSvg = '<line id="eyebrow-default" class="user-eyebrow-blonde" x1="184.64" y1="108.53" x2="229.64" y2="108.53"/>'
-    } else if (userHair == "gold") {
-        userHairColourSvg = 'user-hair-gold';
-        userHairColourStrokeSvg = 'user-hair-stroke-gold';
-        userEyebrowSvg = '<line id="eyebrow-default" class="user-eyebrow-gold" x1="184.64" y1="108.53" x2="229.64" y2="108.53"/>'
-    } else if (userHair == "red") {
-        userHairColourSvg = 'user-hair-red';
-        userHairColourStrokeSvg = 'user-hair-stroke-red';
-        userEyebrowSvg = '<line id="eyebrow-default" class="user-eyebrow-red" x1="184.64" y1="108.53" x2="229.64" y2="108.53"/>'
-    } else if (userHair == "brown") {
-        userHairColourSvg = 'user-hair-brown';
-        userHairColourStrokeSvg = 'user-hair-stroke-brown';
-        userEyebrowSvg = '<line id="eyebrow-default" class="user-eyebrow-brown" x1="184.64" y1="108.53" x2="229.64" y2="108.53"/>'
-    } else if (userHair == "black") {
-        userHairColourSvg = 'user-hair-black';
-        userHairColourStrokeSvg = 'user-hair-stroke-black';
-        userEyebrowSvg = '<line id="eyebrow-default" class="user-eyebrow-black" x1="184.64" y1="108.53" x2="229.64" y2="108.53"/>'
-    };
-
+    //have to update hair value before avatar so that it immediately shows instead of waiting for the next round
+    if (userHair != null) {
+        userHairColourSvg = 'user-hair-' + userHair;
+        userHairColourStrokeSvg = 'user-hair-stroke-' + userHair;
+        userEyebrowSvg = '<line id="eyebrow-default" class="user-eyebrow-' + userHair + '" x1="184.64" y1="108.53" x2="229.64" y2="108.53"/>'
+    }
+    
     if (userAvatar == "default") {
         userHairSvg = '<path id="hair-default" class="' + userHairColourSvg + '" d="M87.16,28.7C93.9,9.36,137.34-.64,148.89,0,136.44,8,138,8.08,138,8.08s43.79-9.73,81.65,20.62C237.1,42.7,249.1,76,249.1,76s-16.92-4.67-24.46-6c-2.43,12.82-26.87,24.33-40.2,33-4.8-13.76-12.5-17.5-12.5-17.5s-31,62.72-41,85c-2.67-15.91-12.44-50.42-12.44-50.42S67.77,107.93,69.77,152c.73,16.07,18.87,49.38,30.08,77.38C68,220.36,63.21,206.54,62,210.69c-5.36,18-12.16,31.82-16.21,37.84-12.63-29.17-26-75.17-26.67-90.12-7.33,12.12-11.33,12.12-11.33,12.12S3.33,84.44,33.14,68c-9.09-4-18.6-7.85-18.6-7.85S53.89,27.36,87.16,28.7Z"/>';
     } else if (userAvatar == "male") {
@@ -533,19 +555,32 @@ function updatePortrait() {
     } else if (userAvatar == "female") {
         userHairSvg = '<path id="hair-female" class="' + userHairColourSvg + '" d="M142.14,17c83,0,100.29,48.32,105.66,73.93-42,0-91.16,13.07-91.16,13.07v89.5l-34-18-5.85-52.65s-38.35.87-42.85,25.37C69.47,172.59,78.79,184,90.16,210c12.47,28.5,32.78,48.5,32.78,48.5l-74.3,7S4.14,215,4.14,134,77.14,17,142.14,17Z"/>';
     };
+    
+//
+//    if (userSkin == "very_fair") {
+//        userSkinSvg = 'user-skin-very-fair';userSkinStrokeSvg = "user-skin-stroke-light";
+//    } else if (userSkin == "fair") {
+//        userSkinSvg = 'user-skin-fair';userSkinStrokeSvg = "user-skin-stroke-light";
+//    } else if (userSkin == "olive") {
+//        userSkinSvg = 'user-skin-olive';userSkinStrokeSvg = "user-skin-stroke-light";
+//    } else if (userSkin == "brown") {
+//        userSkinSvg = 'user-skin-brown';userSkinStrokeSvg = "user-skin-stroke-dark";
+//    } else if (userSkin == "black") {
+//        userSkinSvg = 'user-skin-black';userSkinStrokeSvg = "user-skin-stroke-dark";
+//    };
+//    
+    
+    if (userSkin != null) {
+        userSkinSvg = 'user-skin-' + userSkin.replace("_", "-");
+        if (userSkin == "very_fair"||"fair"||"olive"){ //change the stroke colour of ear depending on what skin colour they have  
+          userSkinStrokeSvg = "user-skin-stroke-light";  
+        } else if (userSkin == "brown"||"black"){
+            userSkinStrokeSvg = "user-skin-stroke-light";  
+        }
+        userEarSvg = '<g id="ear-1" class="' + userSkinStrokeSvg + '"><path d="M114.64,134.53c-9.5-9.5-33-2-33,12s9,40,23,40c9,0,10-6,10-6"/><path d="M103.64,152.53c-9.55-4.29-9,18,2,18,8,0,7-6,7-6"/><path  d="M88.64,144.53c5-5,17-8,21-3s-1,15-8,16"/></g>';
+    }
 
-    if (userSkin == "very_fair") {
-        userSkinSvg = 'user-skin-very-fair';userSkinStrokeSvg = "user-skin-stroke";
-    } else if (userSkin == "fair") {
-        userSkinSvg = 'user-skin-fair';userSkinStrokeSvg = "user-skin-stroke";
-    } else if (userSkin == "olive") {
-        userSkinSvg = 'user-skin-olive';userSkinStrokeSvg = "user-skin-stroke";
-    } else if (userSkin == "brown") {
-        userSkinSvg = 'user-skin-brown';userSkinStrokeSvg = "user-skin-stroke";
-    } else if (userSkin == "black") {
-        userSkinSvg = 'user-skin-black';userSkinStrokeSvg = "user-skin-stroke";
-    };
-
+    
     if (userEye == "dark_brown") {
         userEyeSvg = 'user-eye-dark-brown';
     } else if (userEye == "light_brown") {
@@ -590,7 +625,54 @@ function updatePortrait() {
     $('.portrait-container').html(svgHtml);
 }
 
-/* ----------------------- Research page switch tab ----------------------- */
+/* ======================================= Redo quiz ======================================= */
+function redoQuiz(){
+    // reset all values
+    eyeScore,
+    skinScore,
+    hairScore,
+    earScore,
+    eyebrowScore,
+    finalScoreVal = {
+        "photosynthesise_sunlight": 0,
+        "echolocation": 0,
+        "night_vision": 0,
+        "halve_need_for_sleep": 0,
+        "limb_regeneration": 0,
+        "no_wrinkles": 0,
+        "mood_dependant_iris_colour": 0,
+        "superhuman_strength": 0,
+        "superhuman_vision": 0,
+        "superhuman_colour_vision": 0,
+        "photographic_memory": 0,
+        "increase_lucid_dream": 0,
+        "fast_reaction_time": 0
+    };
+    
+    userSkinSvg = 'user-skin-default';
+    userEyeSvg = 'user-eye-blue';
+    userHairColourSvg = 'cls-2';
+    userEyebrowSvg = '<line id="eyebrow-default" class="cls-1" x1="184.64" y1="108.53" x2="229.64" y2="108.53"/>',
+    userHairSvg = '<path id="hair-default" class="user-hair-blue" d="M87.16,28.7C93.9,9.36,137.34-.64,148.89,0,136.44,8,138,8.08,138,8.08s43.79-9.73,81.65,20.62C237.1,42.7,249.1,76,249.1,76s-16.92-4.67-24.46-6c-2.43,12.82-26.87,24.33-40.2,33-4.8-13.76-12.5-17.5-12.5-17.5s-31,62.72-41,85c-2.67-15.91-12.44-50.42-12.44-50.42S67.77,107.93,69.77,152c.73,16.07,18.87,49.38,30.08,77.38C68,220.36,63.21,206.54,62,210.69c-5.36,18-12.16,31.82-16.21,37.84-12.63-29.17-26-75.17-26.67-90.12-7.33,12.12-11.33,12.12-11.33,12.12S3.33,84.44,33.14,68c-9.09-4-18.6-7.85-18.6-7.85S53.89,27.36,87.16,28.7Z"/>',
+    userSkinStrokeSvg = "cls-1";
+    userEarSvg = '<g id="ear-1" class="' + userSkinStrokeSvg + '"><path d="M114.64,134.53c-9.5-9.5-33-2-33,12s9,40,23,40c9,0,10-6,10-6"/><path d="M103.64,152.53c-9.55-4.29-9,18,2,18,8,0,7-6,7-6"/><path  d="M88.64,144.53c5-5,17-8,21-3s-1,15-8,16"/></g>';
+    
+    userAvatar = userEye = userSkin = userHair = userEar = userEyebrow = undefined;
+    
+    // hide the result section and show the initial question
+    $('#quiz-result').css({'opacity': '0','visibility': 'hidden'});
+    updatePortrait();
+    $('#quiz-name').css({'opacity': '1','visibility': 'visible'});
+}
+
+
+/* ============================================================================================================== */
+/* ============================================================================================================== */
+/* =============================================== RESEARCH PAGE =============================================== */
+/* ============================================================================================================== */
+/* ============================================================================================================== */
+
+/* ======================================= Research page switch tab ======================================= */
 
 function tab1(element){
     $('.research-tab').not($(element)).removeClass('tabOnFocus');
@@ -614,7 +696,13 @@ function tab3(element){
     $('#signup1,#signupHeading1').css('display', 'none');
 }
 
-/* ----------------------- Museums page hover ----------------------- */
+/* ============================================================================================================== */
+/* ============================================================================================================== */
+/* ============================================== MORE EXHIB PAGE ============================================== */
+/* ============================================================================================================== */
+/* ============================================================================================================== */
+
+/* ======================================= Museums page hover ======================================= */
 
 function musMouseOver(element) {
     $('#balckOverlay').css('opacity','0.5');
@@ -627,7 +715,7 @@ function musMouseOut(element) {
     $('.mus').not($(element)).css('filter', 'grayscale(0%) brightness(100%)');
 }
 
-/* ----------------------- Scroll jacking ----------------------- */
+/* ======================================= Scroll jacking ======================================= */
 
 //var scrollOffset = 0;
 //

@@ -156,7 +156,7 @@
             </div>
 
             <!-----------------------result ------------------------->
-            <section id="quiz-result" class="">
+            <section id="quiz-result" class="quiz-questions">
                 <div id="result-portrait" class="portrait-container"></div>
 
                 <div id="result-text">
@@ -168,6 +168,8 @@
                         <span id="result-trait-name">synthesise sunlight</span>
                     </div>
                 </div>
+                
+                <button id="redo-quiz-button" onclick="redoQuiz()">Redo the quiz</button>
 
             </section>
             <!----------------------- 7.eyebrow_shape ------------------------->
@@ -318,7 +320,7 @@
                             <path id="hair-colour-brown" class="cls-1" d="M1.08,43.24c10.58,5.08,15.2-8.4,16.91-20.91s7.2-20,16.93-19.83S58,15.64,53,29.23s-18.54,6.9-21.92,15.11,5.92,12,13.54,6.3" /></svg>
                     </div>
 
-                    <div onclick="calcScore(this)" class="option-container" data-property="balck">
+                    <div onclick="calcScore(this)" class="option-container" data-property="black">
                         <svg id="hair-colour-black" viewBox="0 0 69.58 53.12">
                             <path id="hair-colour-black" class="cls-1" d="M.92,19.59C30.61,7.85,61.29,26,41.21,40.15S8.85,54,14.33,40.15s24.83.72,28.15-21.92C44.29,5.94,69.23,2.48,69.23,2.48" /></svg>
                     </div>

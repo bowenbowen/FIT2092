@@ -484,6 +484,7 @@ h1 {
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
+    transition: 0.5s; /* not working? */
 }
 
 .invisible {
@@ -501,6 +502,7 @@ h1 {
     color: black;
 }
 
+
 /*-----1.name-----*/
 
 #quiz-name {
@@ -509,7 +511,7 @@ h1 {
 
 .quiz-questions input:focus {
     border-bottom: 1px solid #3fa9f5;
-    outline: 0;
+    outline: 1;
 }
 
 .quiz-questions button {
@@ -518,8 +520,9 @@ h1 {
     top: 60%;
     transform: translate(-50%, -50%);
     width: 20%;
-    height: 40px;
-    transition: 0.3s;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    transition: 0.3s ease;
     border: none;
     background-color: #3fa9f5;
     border-radius: 15px;
@@ -528,7 +531,8 @@ h1 {
 }
 
 .quiz-questions button:hover {
-    box-shadow: 0px 7px 10px rgba(46, 49, 146, 0.3);
+    box-shadow: 0px 7px 10px rgba(46, 49, 146, 0.1);
+    transform: scale(1.02) translate(-50%, -50%);
 }
 
 /*-----2.avatar-----*/
@@ -630,7 +634,7 @@ h1 {
 #result-text {
     position: absolute;
     /*    background-color: blue;*/
-    width: 40%;
+    width: 45%;
     height: 100%;
     right: 0;
 }
@@ -666,6 +670,7 @@ h1 {
     top: 55%;
     transform: translate(-50%, 0);
     left: 50%;
+/*    display: flex;*/
 }
 
 #result-text div img {
@@ -695,6 +700,10 @@ h1 {
 #result-portrait img {
     position: absolute;
     top: 20%;
+}
+
+#redo-quiz-button {
+    top: 90%;
 }
 
 /*-----update portrait-----*/
@@ -731,9 +740,15 @@ h1 {
     stroke: none;
 }
 
-.user-skin-stroke {
+.user-skin-stroke-light {
     fill: none;
     stroke: #DB956E;
+    stroke-width: 5px;
+}
+
+.user-skin-stroke-dark {
+    fill: none;
+    stroke: #935B35;
     stroke-width: 5px;
 }
 
@@ -771,6 +786,11 @@ h1 {
     stroke: #3fa9f5;
     stroke-miterlimit: 10;
     stroke-width: 5px;
+}
+
+.user-hair-blue {
+    fill: #3fa9f5;
+    stroke: none;
 }
 
 .user-hair-blonde {
@@ -1162,7 +1182,7 @@ h1 {
 
 .signupForm label {
     font-size: 0.8em;
-    color: gainsboro;
+    color: rgb(180, 180, 180);
 }
 
 .signupForm button {
@@ -1179,7 +1199,8 @@ h1 {
 }
 
 .signupForm button:hover {
-    box-shadow: 0px 7px 10px rgba(46, 49, 146, 0.3);
+    box-shadow: 0px 7px 10px rgba(46, 49, 146, 0.1);
+    transform: scale(1.02);
 }
 
 #signup1 {
