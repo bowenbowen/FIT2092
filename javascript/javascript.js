@@ -14,7 +14,7 @@ var photosynthesiseSunlight,
 
 var userName;
 
-var svgDefault = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270.14 317.75">    <defs><style>        .cls-1{fill:none;stroke:#3fa9f5;stroke-miterlimit:10;stroke-width:5px;}        .cls-2{fill:#3fa9f5;}           </style></defs>       <path id="side-face" class="cls-1" d="M48.64,315.53s30.8-16,12.8-67c-6.61-18.72-25.3-40-25.3-67.5v-52.5c0-58,47.47-105.5,105.5-105.5h0c42.47,0,76.42,33.62,99,81.5,8.27,17.54,27,34.56,27,56l-22,5,11,27L246.46,212l.68,27.51c0,16-8.74,27.83-66.77,27.83,0,0-4.08,35.17.53,44.5"/>            <ellipse id="eye" class="cls-1" cx="219.14" cy="131.53" rx="3.5" ry="7"/>            <line id="eyebrow-default" class="cls-1" x1="184.64" y1="108.53" x2="229.64" y2="108.53"/>        <path id="eyebrow-s" class="cls-1" d="M182.89,112.67s8.47-9,16.57-8.47,12.33,10.21,27.93,8.47"/>        <polyline id="eyebrow-angled" class="cls-1" points="187.14 112.22 202.01 103.7 234.54 113.37"/>        <path id="eyebrow-rounded" class="cls-1" d="M187.6,113.14c6.15-5,11.41-8.34,21.92-9.13,11.12-.83,16.48,3.23,23.15,7.36"/>        <path id="eyebrow-straight" class="cls-1" d="M189.12,110.83c7.51-3.47,30.1-2.63,42.77,0"/>        <g class="invisible" id="eyebrow-none">            <path class="cls-2 " d="M197.78,114.53a1.5,1.5,0,1,0-1.5-1.5A1.5,1.5,0,0,0,197.78,114.53Z"/>            <path class="cls-2" d="M208,110.61a1.5,1.5,0,1,0-1.5-1.5A1.5,1.5,0,0,0,208,110.61Z"/>            <path class="cls-2" d="M220.33,110.61a1.5,1.5,0,1,0-1.5-1.5A1.5,1.5,0,0,0,220.33,110.61Z"/>            <path class="cls-2" d="M230.77,114.43a1.5,1.5,0,1,0-1.5-1.5A1.5,1.5,0,0,0,230.77,114.43Z"/></g>                <path id="hair-female" class="cls-2" d="M142.14,17c83,0,100.29,48.32,105.66,73.93-42,0-91.16,13.07-91.16,13.07v89.5l-34-18-5.85-52.65s-38.35.87-42.85,25.37C69.47,172.59,78.79,184,90.16,210c12.47,28.5,32.78,48.5,32.78,48.5l-74.3,7S4.14,215,4.14,134,77.14,17,142.14,17Z"/>        <path id="hair-male" class="cls-2" d="M141,17c73.5-3.67,73.62,26.5,98.42,18.5C227.94,47.53,218,58.11,204,56c-6.38,8.69-37.92,14.07-49.25,24.67C147.84,87.18,158.1,102,158.1,102l-20.66,28.25-8.7,31L115,117s-41,4-45.5,28.5c-4.47,24.34-15,103-15,103s-25.09-72.85-34.58-87.27C3.44,152-4.56,138.53,2.68,103,16.89,33.4,76.1,20.27,141,17Z"/>        <path id="hair-default" class="cls-2" d="M87.16,28.7C93.9,9.36,137.34-.64,148.89,0,136.44,8,138,8.08,138,8.08s43.79-9.73,81.65,20.62C237.1,42.7,249.1,76,249.1,76s-16.92-4.67-24.46-6c-2.43,12.82-26.87,24.33-40.2,33-4.8-13.76-12.5-17.5-12.5-17.5s-31,62.72-41,85c-2.67-15.91-12.44-50.42-12.44-50.42S67.77,107.93,69.77,152c.73,16.07,18.87,49.38,30.08,77.38C68,220.36,63.21,206.54,62,210.69c-5.36,18-12.16,31.82-16.21,37.84-12.63-29.17-26-75.17-26.67-90.12-7.33,12.12-11.33,12.12-11.33,12.12S3.33,84.44,33.14,68c-9.09-4-18.6-7.85-18.6-7.85S53.89,27.36,87.16,28.7Z"/>                <g id="ear-1"><path class="cls-1" d="M114.64,134.53c-9.5-9.5-33-2-33,12s9,40,23,40c9,0,10-6,10-6"/><path class="cls-1" d="M103.64,152.53c-9.55-4.29-9,18,2,18,8,0,7-6,7-6"/><path class="cls-1" d="M88.64,144.53c5-5,17-8,21-3s-1,15-8,16"/></g>        <g id="ear-2" class="invisible"><path class="cls-1" d="M114.7,135.57C93.38,122.43,77.87,143,77.87,156.36c0,6.68,7,12.88,12.12,18.42s8.48,10.43,15.16,10.43c8.59,0,9.55-5.73,9.55-5.73"/><path class="cls-1" d="M104.2,152.75c-9.12-4.1-8.59,17.18,1.91,17.18,7.63,0,6.68-5.72,6.68-5.72"/><path class="cls-1" d="M102.29,157.53c6.68-1,11.45-10.5,7.64-15.28s-15.38-2-20.05,2.87-7.17,7.85-4.26,12.21"/></g>        <g id="ear-3" class="invisible"><path class="cls-1" d="M108.59,138.34c-3.79-3.79-6.16-8.59-12.11-8.79-15-.48-12.6,10.64-12.6,18.43,0,6.68,1,23.66,4.36,28.11S92.36,188,99.05,188c8.59,0,9.54-5.73,9.54-5.73"/><path class="cls-1" d="M98.09,155.52c-9.12-4.1-8.33,14.87,1.91,17.18,8.6,1.94,10.54-4.36,10.54-4.36"/><path class="cls-1" d="M90.18,138.76c4.77-4.77,9.76,1.53,13.58,6.31s-.9,14.27-7.58,15.22"/></g>        <g id="ear-4" class="invisible"><path class="cls-1" d="M114.64,136.62c-4.53-4.53-10.22-10.62-17-8.29-3,1-7.75,5.66-11.15,8.24-4.19,3.17-10.18,6.49-10.18,10.18,0,10,5.07,16.26,15,24.24,3.32,2.66,4.09,14.5,7.27,15.51,9.21,2.91,16-6,16-6"/><path class="cls-1" d="M104.14,153.8C95,149.71,95.55,171,106.05,171c7.63,0,6.68-5.73,6.68-5.73"/><path class="cls-1" d="M102.23,158.58c6.68-1,9.45-14.82,5.63-19.59s-15.1-1.38-19.87,3.39-6.3,6.79-3.88,10.67"/></g>        <g id="ear-5" class="invisible"><path class="cls-1" d="M111.41,136.65c-9.06-9.06-31.5-1.91-31.5,11.46,0,6-1.22,15,1.94,22.42,3.83,8.93,15.47,16,22.79,16,8.59,0,8.24-10.18,8.24-10.18"/><path class="cls-1" d="M101.82,152.48c-8.17-3.67-7.7,15.39,1.71,15.39,6.83,0,6-5.13,6-5.13"/><path class="cls-1" d="M89,145.64c4.27-4.27,14.53-6.84,17.94-2.56s-.85,12.82-6.83,13.67"/></g></svg>'
+var svgDefault = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270.14 317.75"><defs><style>.cls-1{fill:none;stroke:#3fa9f5;stroke-miterlimit:10;stroke-width:5px;}.cls-2{fill:#3fa9f5;}</style></defs> <path id="side-face" class="user-skin-default" d="M48.64,315.53s30.8-16,12.8-67c-6.61-18.72-25.3-40-25.3-67.5v-52.5c0-58,47.47-105.5,105.5-105.5h0c42.47,0,76.42,33.62,99,81.5,8.27,17.54,27,34.56,27,56l-22,5,11,27L246.46,212l.68,27.51c0,16-8.74,27.83-66.77,27.83,0,0-4.08,35.17.53,44.5"></path><ellipse id="eye" class="user-eye-blue" cx="219.14" cy="131.53" rx="3.5" ry="7"></ellipse><line id="eyebrow-default" class="cls-1" x1="184.64" y1="108.53" x2="229.64" y2="108.53"></line><path id="hair-default" class="cls-2" d="M87.16,28.7C93.9,9.36,137.34-.64,148.89,0,136.44,8,138,8.08,138,8.08s43.79-9.73,81.65,20.62C237.1,42.7,249.1,76,249.1,76s-16.92-4.67-24.46-6c-2.43,12.82-26.87,24.33-40.2,33-4.8-13.76-12.5-17.5-12.5-17.5s-31,62.72-41,85c-2.67-15.91-12.44-50.42-12.44-50.42S67.77,107.93,69.77,152c.73,16.07,18.87,49.38,30.08,77.38C68,220.36,63.21,206.54,62,210.69c-5.36,18-12.16,31.82-16.21,37.84-12.63-29.17-26-75.17-26.67-90.12-7.33,12.12-11.33,12.12-11.33,12.12S3.33,84.44,33.14,68c-9.09-4-18.6-7.85-18.6-7.85S53.89,27.36,87.16,28.7Z"></path><g id="ear-1" class="cls-1"><path d="M114.64,134.53c-9.5-9.5-33-2-33,12s9,40,23,40c9,0,10-6,10-6"></path><path d="M103.64,152.53c-9.55-4.29-9,18,2,18,8,0,7-6,7-6"></path><path d="M88.64,144.53c5-5,17-8,21-3s-1,15-8,16"></path></g></svg>'
 
 $(function () {
     
@@ -475,14 +475,28 @@ function calcFinalScore() {
 function getChildIndex(elem){
     var  i= 0;
     while((elem=elem.previousElementSibling)!=null) ++i;
-    return i;
+    // getting the index of an element in the nodelist of its parent
+    //^https://stackoverflow.com/questions/4649699/is-it-possible-to-get-elements-numerical-index-in-its-parent-node-without-loopi
+    function elemToShow(){  // match the dot selected and the corresponding question
+        var questionIndex = Math.abs(i - $('.quiz-questions').length) - 1;  // reverse the order
+        var questionToShow = $('.quiz-questions')[questionIndex];
+        return questionToShow;
+    }
+    return elemToShow();
 }
-//https://stackoverflow.com/questions/4649699/is-it-possible-to-get-elements-numerical-index-in-its-parent-node-without-loopi
-
+    
+    
 $('.quiz-questions ol li').on('click', function(){
-    alert();
+        $('.quiz-questions').css({
+            'opacity': '0',
+            'visibility': 'hidden'
+        });
+        $(getChildIndex(this)).css({
+            'opacity': '1',
+            'visibility': 'visible'
+        });
 });
-
+    
 
 /* ======================================= Background music ======================================= */
 
@@ -556,20 +570,6 @@ function updatePortrait() {
         userHairSvg = '<path id="hair-female" class="' + userHairColourSvg + '" d="M142.14,17c83,0,100.29,48.32,105.66,73.93-42,0-91.16,13.07-91.16,13.07v89.5l-34-18-5.85-52.65s-38.35.87-42.85,25.37C69.47,172.59,78.79,184,90.16,210c12.47,28.5,32.78,48.5,32.78,48.5l-74.3,7S4.14,215,4.14,134,77.14,17,142.14,17Z"/>';
     };
     
-//
-//    if (userSkin == "very_fair") {
-//        userSkinSvg = 'user-skin-very-fair';userSkinStrokeSvg = "user-skin-stroke-light";
-//    } else if (userSkin == "fair") {
-//        userSkinSvg = 'user-skin-fair';userSkinStrokeSvg = "user-skin-stroke-light";
-//    } else if (userSkin == "olive") {
-//        userSkinSvg = 'user-skin-olive';userSkinStrokeSvg = "user-skin-stroke-light";
-//    } else if (userSkin == "brown") {
-//        userSkinSvg = 'user-skin-brown';userSkinStrokeSvg = "user-skin-stroke-dark";
-//    } else if (userSkin == "black") {
-//        userSkinSvg = 'user-skin-black';userSkinStrokeSvg = "user-skin-stroke-dark";
-//    };
-//    
-    
     if (userSkin != null) {
         userSkinSvg = 'user-skin-' + userSkin.replace("_", "-");
         if (userSkin == "very_fair"||"fair"||"olive"){ //change the stroke colour of ear depending on what skin colour they have  
@@ -580,18 +580,10 @@ function updatePortrait() {
         userEarSvg = '<g id="ear-1" class="' + userSkinStrokeSvg + '"><path d="M114.64,134.53c-9.5-9.5-33-2-33,12s9,40,23,40c9,0,10-6,10-6"/><path d="M103.64,152.53c-9.55-4.29-9,18,2,18,8,0,7-6,7-6"/><path  d="M88.64,144.53c5-5,17-8,21-3s-1,15-8,16"/></g>';
     }
 
-    
-    if (userEye == "dark_brown") {
-        userEyeSvg = 'user-eye-dark-brown';
-    } else if (userEye == "light_brown") {
-        userEyeSvg = 'user-eye-light-brown';
-    } else if (userEye == "hazelnut") {
-        userEyeSvg = 'user-eye-hazelnut';
-    } else if (userEye == "blue") {
-        userEyeSvg = 'user-eye-blue';
-    } else if (userEye == "green") {
-        userEyeSvg = 'user-eye-green';
-    };
+
+    if (userEye != null) {
+        userEyeSvg = 'user-eye-' + userEye.replace("_", "-");
+    }
     
     if (userEar == "ear_1") {
       userEarSvg = '<g id="ear-1" class="' + userSkinStrokeSvg + '"><path d="M114.64,134.53c-9.5-9.5-33-2-33,12s9,40,23,40c9,0,10-6,10-6"/><path d="M103.64,152.53c-9.55-4.29-9,18,2,18,8,0,7-6,7-6"/><path d="M88.64,144.53c5-5,17-8,21-3s-1,15-8,16"/></g>';
@@ -706,12 +698,12 @@ function tab3(element){
 
 function musMouseOver(element) {
     $('#balckOverlay').css('opacity','0.5');
-    $('#museums-page > h2,#museums-page > h2').css('opacity','0.5');
+    $('#museums-page > h2, #museums-page > h3').css('opacity','0.3');
     $('.mus').not($(element)).css('filter', 'grayscale(100%) brightness(50%)');
 }
 function musMouseOut(element) {
     $('#balckOverlay').css('opacity','0');
-    $('#museums-page > h2,#museums-page > h2').css('opacity','1');
+    $('#museums-page > h2, #museums-page > h3').css('opacity','1');
     $('.mus').not($(element)).css('filter', 'grayscale(0%) brightness(100%)');
 }
 
